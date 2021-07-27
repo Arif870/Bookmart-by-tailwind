@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- tailwind css connect -->
+    <link rel="stylesheet" href="build/style.css" />
+    <!-- favicon connect  -->
+    <link
+      rel="shortcut icon"
+      href="images/icon-arrow.svg"
+      type="image/x-icon"
+    />
+    <title>Bookmark</title>
+  </head>
+
+  <body class="font-Poppins">
+    <!-- header part design -->
+    <header>
+      <div class="container flex justify-between align-center mt-6">
+        <div class="nav-brand">
+          <img src="images/logo-bookmark.svg" alt="" />
+        </div>
+        <div>
+          <div class="ml-10 flex items-center space-x-4">
+            <div class="hidden md:block">
+              <a
+                class="
+                  text-gray-800
+                  hover:text-gray-800
+                  dark:hover:text-white
+                  px-3
+                  py-2
+                  rounded-md
+                  text-sm
+                  font-medium
+                "
+                href="/#"
+              >
+                Home
+              </a>
+              <a
+                class="
+                  text-gray-400
+                  dark:text-white
+                  hover:text-gray-800
+                  dark:hover:text-white
+                  px-3
+                  py-2
+                  rounded-md
+                  text-sm
+                  font-medium
+                "
+                href="/#"
+              >
+                Gallery
+              </a>
+              <a
+                class="
+                  text-gray-400
+                  hover:text-gray-800
+                  dark:hover:text-white
+                  px-3
+                  py-2
+                  rounded-md
+                  text-sm
+                  font-medium
+                "
+                href="/#"
+              >
+                Content
+              </a>
+              <a
+                class="
+                  text-gray-400
+                  hover:text-gray-800
+                  dark:hover:text-white
+                  px-3
+                  py-2
+                  rounded-md
+                  text-sm
+                  font-medium
+                "
+                href="/#"
+              >
+                Contact
+              </a>
+            </div>
+            <a class="cursor-pointer block md:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- header hero section  -->
+      <section
+        class="
+          container
+          md:flex md:my-24
+          my-10
+          mt-10
+          items-center
+          p-5
+          gap-8
+          justify-between
+        "
+      >
+        <div class="left-content">
+          <h1 class="lg:text-6xl md:text-4xl text-3xl text-gray-800">
+            A Simple Bookmark Manager
+          </h1>
+          <p class="mt-6 font-normal text-gray-500 md:w-3/4 w-full">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <div
+            class="
+              mt-10
+              grid
+              md:grid-cols-2
+              sm:grid-cols-1
+              gap-4
+              lg:w-6/12
+              md:w-11/12
+            "
+          >
+            <a
+              class="bg-blue-600 py-3 px-5 text-white rounded-md shadow-md"
+              href="#"
+              >Get it on Chrome</a
+            >
+            <a
+              class="
+                bg-gray-200
+                py-3
+                px-5
+                text-gray-700
+                md:ml-5
+                rounded-md
+                shadow-md
+              "
+              href="#"
+              >Get it on Firefox</a
+            >
+          </div>
+        </div>
+        <div class="right-content mt-10">
+          <img class="" src="images/hero-bg.png" alt="" />
+        </div>
+      </section>
+    </header>
+
+    <!-- Features section -->
+    <section class="bg-gray-100 pb-10">
+      <div class="container">
+        <div class="features text-center md:w-4/6 mx-auto">
+          <h1 class="text-3xl text-gray-800 md:pt-20 pt-10">Features</h1>
+          <p class="text-gray-600 pt-6 pb-10">
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
+        </div>
+
+        <!-- bookmark in one clink -->
+        <div
+          class="
+            grid
+            gap-10
+            sm:grid-cols-1
+            md:grid-cols-2
+            lg:mt-32
+            sm:mt-10
+            items-center
+          "
+        >
+          <div class="left-image">
+            <img src="images/illustration-features-tab-1.png" alt="" />
+          </div>
+          <div class="right-content space-y-3">
+            <h1 class="text-3xl text-gray-800">Bookmark in one click</h1>
+            <p class="text-gray-600">
+              Organize your bookmarks however you like. Our simple drag-and-drop
+              interface gives you complete control over how you manage your
+              favourite sites.
+            </p>
+            <a
+              class="
+                bg-blue-600
+                py-3
+                px-5
+                text-white
+                rounded-md
+                shadow-md
+                inline-block
+              "
+              href="#"
+              >More info</a
+            >
+          </div>
+        </div>
+
+        <!-- Intelligence search -->
+        <div
+          class="
+            grid
+            gap-10
+            sm:grid-cols-1
+            md:grid-cols-2
+            lg:mt-32
+            sm:mt-10
+            items-center
+          "
+        >
+          <div class="right-image md:order-2 mt-10">
+            <img src="images/illustration-features-tab-2.png" alt="" />
+          </div>
+          <div class="left-content space-y-3">
+            <h1 class="text-3xl text-gray-800">Intelligent search</h1>
+            <p class="text-gray-600">
+              Our powerful search feature will help you find saved sites in no
+              time at all. No need to crawl through all of your bookmarks.
+            </p>
+            <a
+              class="
+                bg-blue-600
+                py-3
+                px-5
+                text-white
+                rounded-md
+                shadow-md
+                inline-block
+              "
+              href="#"
+              >More info</a
+            >
+          </div>
+        </div>
+
+        <!-- share your bookmarl -->
+        <div
+          class="
+            grid
+            gap-10
+            sm:grid-cols-1
+            md:grid-cols-2
+            lg:mt-32
+            sm:mt-10
+            items-center
+          "
+        >
+          <div class="left-image mt-10">
+            <img src="images/illustration-features-tab-3.png" alt="" />
+          </div>
+          <div class="right-content space-y-3">
+            <h1 class="text-3xl text-gray-800">Share your bookmarks</h1>
+            <p class="text-gray-600">
+              Easily share your bookmarks and collections with others. Create a
+              shareable link that you can send at the click of a button.
+            </p>
+            <a
+              class="
+                bg-blue-600
+                py-3
+                px-5
+                text-white
+                rounded-md
+                shadow-md
+                inline-block
+              "
+              href="#"
+              >More info</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Extentions section  -->
+    <section class="md:pb-20 pb-10">
+      <div class="extention">
+        <div class="content mt-10 md:mt-32 mx-auto md:w-2/4 w-3/4">
+          <h1 class="text-center text-4xl text-gray-800">
+            Download the extension
+          </h1>
+          <p class="text-center mt-6 text-gray-500">
+            We’ve got more browsers in the pipeline. Please do let us know if
+            you’ve got a favourite you’d like us to prioritize.
+          </p>
+        </div>
+
+        <!-- card section  -->
+
+        <div class="mt-20">
+          <div
+            class="
+              container
+              grid
+              lg:grid-cols-3
+              md:grid-cols-2
+              grid-cols-1
+              justify-between
+              gap-8
+            "
+          >
+            <div class="card-1 shadow-lg p-6 rounded-lg text-center">
+              <img class="mx-auto" src="images/logo-chrome.svg" alt="" />
+              <h2 class="mt-4 mb-3 text-xl text-gray-800">Add to Chrome</h2>
+              <p class="text-gray-500 mb-4">Minium version 32.4</p>
+              <hr />
+              <div class="button py-4">
+                <a
+                  class="
+                    bg-blue-600
+                    text-white
+                    py-3
+                    px-3
+                    rounded-lg
+                    shadow
+                    inline-block
+                    mt-3
+                  "
+                  href=""
+                  >Add & Install Extension</a
+                >
+              </div>
+            </div>
+            <div class="card-1 shadow-lg p-6 rounded-lg text-center">
+              <img class="mx-auto" src="images/logo-opera.svg" alt="" />
+              <h2 class="mt-4 mb-3 text-xl text-gray-800">Add to Opera</h2>
+              <p class="text-gray-500 mb-4">Minium version 23.5</p>
+              <hr />
+              <div class="button py-4">
+                <a
+                  class="
+                    bg-blue-600
+                    text-white
+                    py-3
+                    px-3
+                    rounded-lg
+                    shadow
+                    inline-block
+                    mt-3
+                  "
+                  href=""
+                  >Add & Install Extension</a
+                >
+              </div>
+            </div>
+            <div class="card-1 shadow-lg p-6 rounded-lg text-center">
+              <img class="mx-auto" src="images/logo-firefox.svg" alt="" />
+              <h2 class="mt-4 mb-3 text-xl text-gray-800">Add to Firefox</h2>
+              <p class="text-gray-500 mb-4">Minium version 54.2</p>
+              <hr />
+              <div class="button py-4">
+                <a
+                  class="
+                    bg-blue-600
+                    text-white
+                    py-3
+                    px-3
+                    rounded-lg
+                    shadow
+                    inline-block
+                    mt-3
+                  "
+                  href=""
+                  >Add & Install Extension</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- frequently asked question -->
+    <section class="bg-gray-100 pb-20">
+      <div class="container">
+        <div class="content sm:w-8/12 w-full mx-auto text-center md:p-20 p-10">
+          <h1 class="text-4xl text-gray-700">Frequently Asked Questions</h1>
+          <p class="mt-5 text-gray-500">
+            Here are some of our FAQs. If you have any other questions you’d
+            like answered please feel free to email us.
+          </p>
+        </div>
+        <!-- accordion section  -->
+        <div class="">
+          <div class="md:w-6/12 mx-auto">
+            <div class="flex justify-between p-6">
+              <p class="text-gray-700">What is a Bookmark?</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="text-gray-700"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+            <hr />
+            <div class="flex justify-between p-6">
+              <p class="text-gray-700">How can I request a new browser?</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="text-gray-700"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+            <hr />
+            <div class="flex justify-between p-6">
+              <p class="text-gray-700">Is there a mobile app?</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="text-gray-700"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+            <hr />
+            <div class="flex justify-between p-6">
+              <p class="text-gray-700">What about other Chromium browsers?</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="text-gray-700"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+            <hr />
+
+            <div class="block text-center">
+              <a
+                href=""
+                class="
+                  text-white
+                  inline-block
+                  bg-blue-600
+                  rounded-md
+                  py-3
+                  px-4
+                  shadow
+                  mt-10
+                "
+                >More info</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section  -->
+
+    <footer class="text-center bg-gray-800 text-white p-10">
+      <p>Copyright &copy; Arif 2021.</p>
+    </footer>
+  </body>
+</html>
